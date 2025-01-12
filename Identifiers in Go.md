@@ -61,3 +61,5 @@ func myFunction() (int, string) {
 }
 ```
 In this code, the first return value from `myFunction()` is ignored using the `_` identifier, while the second return value is assigned to `b`.
+
+Next-> [[Keywords in Go]]
