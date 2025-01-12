@@ -159,4 +159,4 @@ yet feel free to check other resources :
 https://go.dev/tour/welcome/1
 https://www.geeksforgeeks.org/go-keywords/?ref=lbp
 
-NEXT -> [[Keywords in Go]]
+NEXT -> [[(3) Data Types in Go]]

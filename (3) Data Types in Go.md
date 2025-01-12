@@ -41,4 +41,4 @@ Data types specify the type of data that a valid [Go variable](https://www.geek
 
 **==Strings==** : The string data type represents a sequence of Unicode code points.
 
-NEXT -> [[Variables in Go]]
+NEXT -> [[(4) Variables in Go]]
