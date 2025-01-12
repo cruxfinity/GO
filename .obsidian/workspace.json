@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "352dd7d70ea5dcea",
+        "id": "f71903088d86784b",
         "type": "tabs",
         "children": [
           {
-            "id": "31ba312d63a6f96c",
+            "id": "5af62fbfd75185b2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "README"
+              "title": "New tab"
             }
           }
         ]
@@ -160,17 +156,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "31ba312d63a6f96c",
+  "active": "124c958a7ad414bc",
   "lastOpenFiles": [
+    "README.md",
     "(3) Data Types in Go.md",
     "(4) Variables in Go.md",
     "(2) Keywords in Go.md",
     "(1) Identifiers in Go.md",
     "Keywords in Go.md",
-    "README.md",
     "Untitled",
-    "README.md",
-    "GO_Roadmap.pdf",
+    "(0) GO_Roadmap.pdf",
     "Fundamentals.md",
     "Fundamentals",
     "GO_roadmap/RoadMap.md",
