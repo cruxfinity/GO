@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "f71903088d86784b",
+        "id": "6d873fd05ac114da",
         "type": "tabs",
         "children": [
           {
-            "id": "5af62fbfd75185b2",
+            "id": "b0c6f63c804d32d9",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "(5) Operators in Go.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "(5) Operators in Go"
             }
           }
         ]
@@ -156,11 +160,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "124c958a7ad414bc",
+  "active": "b0c6f63c804d32d9",
   "lastOpenFiles": [
+    "(4) Variables in Go.md",
+    "(5) Operators in Go.md",
     "README.md",
     "(3) Data Types in Go.md",
-    "(4) Variables in Go.md",
     "(2) Keywords in Go.md",
     "(1) Identifiers in Go.md",
     "Keywords in Go.md",

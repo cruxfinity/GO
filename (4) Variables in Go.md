@@ -61,3 +61,5 @@ fmt.println(PI)
 ```
 
 For reference : https://www.geeksforgeeks.org/constants-go-language/?ref=lbp
+
+NEXT -> [[(5) Operators in Go]]
