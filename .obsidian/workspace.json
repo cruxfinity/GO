@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "8d279d2505788f04",
+        "id": "9dced1c624e86e55",
         "type": "tabs",
         "children": [
           {
-            "id": "6fe4319df2e02507",
+            "id": "2239e2d5165d69d1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "(6) Control statements in Go.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "(6) Control statements in Go"
+              "title": "New tab"
             }
           }
         ]
@@ -160,10 +156,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6fe4319df2e02507",
+  "active": "2239e2d5165d69d1",
   "lastOpenFiles": [
-    "(5) Operators in Go.md",
     "(6) Control statements in Go.md",
+    "(5) Operators in Go.md",
     "(4) Variables in Go.md",
     "README.md",
     "(3) Data Types in Go.md",
