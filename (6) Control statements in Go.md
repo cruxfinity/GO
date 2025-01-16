@@ -263,3 +263,5 @@ func main() {
     }
 }
 ```
+
+NEXT -> [[(7) Struct in Go]]

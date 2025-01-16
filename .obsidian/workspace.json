@@ -8,13 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2239e2d5165d69d1",
+            "id": "52b68efd4ed1d772",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "(6) Control statements in Go.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "(6) Control statements in Go"
             }
           }
         ]
@@ -156,8 +160,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2239e2d5165d69d1",
+  "active": "52b68efd4ed1d772",
   "lastOpenFiles": [
+    "(7) Struct in Go.md",
     "(6) Control statements in Go.md",
     "(5) Operators in Go.md",
     "(4) Variables in Go.md",
