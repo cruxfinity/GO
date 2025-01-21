@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "9dced1c624e86e55",
+        "id": "6e8eb1efc11cece6",
         "type": "tabs",
         "children": [
           {
-            "id": "52b68efd4ed1d772",
+            "id": "2c0619094f4b7757",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "(6) Control statements in Go.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "(6) Control statements in Go"
+              "title": "New tab"
             }
           }
         ]
@@ -160,16 +156,28 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "52b68efd4ed1d772",
+  "active": "2c0619094f4b7757",
   "lastOpenFiles": [
-    "(7) Struct in Go.md",
+    "(15) REVISION.md",
+    "(14) Concurrency in Go.md",
+    "(8) Functions and methods in Go.md",
+    "(12) Error handling in Go.md",
+    "(11) Maps in Go.md",
+    "(13) File handling in Go.md",
+    "(10) Strings in Golang.md",
+    "(4) Variables in Go.md",
     "(6) Control statements in Go.md",
     "(5) Operators in Go.md",
-    "(4) Variables in Go.md",
-    "README.md",
+    "(7) Struct and pointers in Go.md",
+    "[(11) Error handling in Go.md",
+    "[Arrays and Slices in Go.md",
+    "[(8) Functions and methods in Go.md",
+    "(9) Arrays and Slices in Go.md",
+    "[(10) Strings in Golang.md",
     "(3) Data Types in Go.md",
     "(2) Keywords in Go.md",
     "(1) Identifiers in Go.md",
+    "README.md",
     "Keywords in Go.md",
     "Untitled",
     "(0) GO_Roadmap.pdf",
@@ -180,7 +188,6 @@
     "GO_roadmap",
     "What to learn.md",
     "Go basics.md",
-    "GO_basics",
-    "Welcome.md"
+    "GO_basics"
   ]
 }

@@ -7,36 +7,307 @@ Operators allow us to perform different kinds of operations on operands. In the�
 - [Assignment Operators](https://www.geeksforgeeks.org/go-operators/#Assignment%20Operators)
 - [Misc Operators](https://www.geeksforgeeks.org/go-operators/#Misc%20Operators)
 
-#### Arithmetic Operators
-- **Addition:** The ‘+’ operator adds two operands. For example, x+y.
-- **Subtraction:** The ‘-‘ operator subtracts two operands. For example, x-y.
-- **Multiplication:** The ‘*’ operator multiplies two operands. For example, x*y.
-- **Division:** The ‘/’ operator divides the first operand by the second. For example, x/y.
-- **Modulus:** The ‘%’ operator returns the remainder when the first operand is divided by the second. For example, x%y.
+Go has a rich set of operators that you can use in various contexts like arithmetic, comparisons, logical operations, and more. Let's dive into the details of these operators with examples:
 
-**Note:** -, +, !, &, *, <-, and ^ are also known as unary operators and the precedence of unary operators is higher. ++ and — operators are from statements they are not expressions, so they are out from the operator hierarchy.
+### Arithmetic Operators
 
-#### Relational Operators
-- " == "(Equal To) operator checks whether the two given operands are equal or not. If so, it returns true. Otherwise, it returns false.
-- **‘!='(Not Equal To)** operator checks whether the two given operands are equal or not. If not, it returns true. Otherwise, it returns false. It is the exact Boolean complement of the ‘ == ’ operator. 
-- **‘>'(Greater Than)**operator checks whether the first operand is greater than the second operand. If so, it returns true. Otherwise, it returns false. 
-- **‘<‘(Less Than)**operator checks whether the first operand is lesser than the second operand. If so, it returns true. Otherwise, it returns false. 
-- **‘>='(Greater Than Equal To)**operator checks whether the first operand is greater than or equal to the second operand. If so, it returns true. Otherwise, it returns false. 
-- **‘<='(Less Than Equal To)**operator checks whether the first operand is lesser than or equal to the second operand. If so, it returns true. Otherwise, it returns false. 
+Arithmetic operators are used to perform mathematical operations.
 
-#### Logical Operators
-- ==**Logical AND:** The ‘&&’ operator returns true when both the conditions in consideration are satisfied.== Otherwise it returns false. For example, a && b returns true when both a and b are true (i.e. non-zero).
-- ==**Logical OR:** The ‘||’ operator returns true when one (or both) of the conditions in consideration is satisfied.== Otherwise it returns false. For example, a || b returns true if one of a or b is true (i.e. non-zero). Of course, it returns true when both a and b are true.
-- ==**Logical NOT:** The ‘!’ operator returns true the condition in consideration is not satisfied==. Otherwise it returns false. For example, !a returns true if a is false, i.e. when a=0.
+- **Addition (+):**
+    
+    
+    
+    ```
+    sum := 5 + 3 // sum is 8
+    ```
+    
+- **Subtraction (-):**
+    
+    
+    
+    ```
+    difference := 10 - 4 // difference is 6
+    ```
+    
+- _Multiplication (_):*
+    
+    
+    
+    ```
+    product := 7 * 6 // product is 42
+    ```
+    
+- **Division (/):**
+    
+    
+    
+    ```
+    quotient := 9 / 3 // quotient is 3
+    // Note: Integer division truncates towards zero
+    ```
+    
+- **Modulus (%):**
+    
+    
+    
+    ```
+    remainder := 10 % 3 // remainder is 1
+    ```
+    
 
-#### Bitwise Operators
-In Go language, there are 6 bitwise operators which work at bit level or used to perform bit by bit operations.
-- **& (bitwise AND):** Takes two numbers as operands and does AND on every bit of two numbers. The result of AND is 1 only if both bits are 1.
-- **| (bitwise OR):** Takes two numbers as operands and does OR on every bit of two numbers. The result of OR is 1 any of the two bits is 1.
-- **^ (bitwise XOR):** Takes two numbers as operands and does XOR on every bit of two numbers. The result of XOR is 1 if the two bits are different.
-- **<< (left shift):** Takes two numbers, left shifts the bits of the first operand, the second operand decides the number of places to shift.
-- **>> (right shift):** Takes two numbers, right shifts the bits of the first operand, the second operand decides the number of places to shift.
-- **&^ (AND NOT):** This is a bit clear operator.
+### Comparison Operators
+
+Comparison operators are used to compare two values and return a boolean result.
+
+- **Equal to ( == ):**
+    
+    
+    
+    ```
+    equal := (5 == 5) // equal is true
+    ```
+    
+- **Not equal to (!=):**
+    
+    
+    
+    ```
+    notEqual := (5 != 3) // notEqual is true
+    ```
+    
+- **Greater than (>):**
+    
+    
+    
+    ```
+    greater := (7 > 4) // greater is true
+    ```
+    
+- **Less than (<):**
+    
+    
+    
+    ```
+    less := (3 < 5) // less is true
+    ```
+    
+- **Greater than or equal to (>=):**
+    
+    
+    
+    ```
+    greaterOrEqual := (7 >= 7) // greaterOrEqual is true
+    ```
+    
+- **Less than or equal to (<=):**
+    
+    
+    
+    ```
+    lessOrEqual := (4 <= 5) // lessOrEqual is true
+    ```
+    
+
+### Logical Operators
+
+Logical operators are used to combine multiple conditions.
+
+- **Logical AND (&&):**
+    
+    
+    
+    ```
+    and := (true && false) // and is false
+    ```
+    
+- **Logical OR (||):**
+    
+    
+    
+    ```
+    or := (true || false) // or is true
+    ```
+    
+- **Logical NOT (!):**
+    
+    
+    
+    ```
+    not := !true // not is false
+    ```
+    
+
+### Bitwise Operators
+
+Bitwise operators perform operations on individual bits of integer values.
+
+- **Bitwise AND (&):**
+    
+    
+    
+    ```
+    bitwiseAnd := 6 & 3 // bitwiseAnd is 2 (0110 & 0011 is 0010)
+    ```
+    
+- **Bitwise OR (|):**
+    
+    
+    
+    ```
+    bitwiseOr := 6 | 3 // bitwiseOr is 7 (0110 | 0011 is 0111)
+    ```
+    
+- **Bitwise XOR (^):**
+    
+    
+    
+    ```
+    bitwiseXor := 6 ^ 3 // bitwiseXor is 5 (0110 ^ 0011 is 0101)
+    ```
+    
+- **Bitwise NOT (^):**
+    
+    
+    
+    ```
+    bitwiseNot := ^6 // bitwiseNot is -7 (In two's complement, the bitwise NOT of 0110 is 1001)
+    ```
+    
+- **Left shift (<<):**
+    
+    
+    
+    ```
+    leftShift := 3 << 2 // leftShift is 12 (0011 shifted left by 2 positions is 1100)
+    ```
+    
+- **Right shift (>>):**
+    
+    
+    
+    ```
+    rightShift := 8 >> 2 // rightShift is 2 (1000 shifted right by 2 positions is 0010)
+    ```
+    
+
+### Assignment Operators
+
+Assignment operators are used to assign values to variables.
+
+- **Assignment (=):**
+    
+    
+    
+    ```
+    var x int = 10 // Assigns 10 to x
+    ```
+    
+- **Addition assignment (+=):**
+    
+    
+    
+    ```
+    x += 5 // x is now 15
+    ```
+    
+- **Subtraction assignment (-=):**
+    
+    
+    
+    ```
+    x -= 3 // x is now 12
+    ```
+    
+- _Multiplication assignment (_=):*
+    
+    
+    
+    ```
+    x *= 2 // x is now 24
+    ```
+    
+- **Division assignment (/=):**
+    
+    
+    
+    ```
+    x /= 4 // x is now 6
+    ```
+    
+- **Modulus assignment (%=):**
+    
+    
+    
+    ```
+    x %= 4 // x is now 2
+    ```
+    
+- **Bitwise AND assignment (&=):**
+    
+    
+    
+    ```
+    x &= 3 // x is now 2 (0010 & 0011 is 0010)
+    ```
+    
+- **Bitwise OR assignment (|=):**
+    
+    
+    
+    ```
+    x |= 1 // x is now 3 (0010 | 0001 is 0011)
+    ```
+    
+- **Bitwise XOR assignment (^=):**
+    
+    
+    
+    ```
+    x ^= 2 // x is now 1 (0011 ^ 0010 is 0001)
+    ```
+    
+- **Left shift assignment (<<=):**
+    
+    
+    
+    ```
+    x <<= 1 // x is now 2 (0001 shifted left by 1 position is 0010)
+    ```
+    
+- **Right shift assignment (>>=):**
+    
+    
+    
+    ```
+    x >>= 1 // x is now 1 (0010 shifted right by 1 position is 0001)
+    ```
+    
+
+### Other Operators
+
+- **Address-of (&):**
+    
+    
+    
+    ```
+    y := 10
+    ptr := &y // ptr is a pointer to y
+    ```
+    
+- _Dereference (_):*
+    
+    
+    
+    ```
+    z := *ptr // z is 10, the value of y
+    ```
+    
+
+### Example: Using Different Operators
+
+Here's a complete example that demonstrates the use of various operators in Go:
+
+
 
 ```
 package main
@@ -44,102 +315,60 @@ package main
 import "fmt"
 
 func main() {
+    // Arithmetic operators
+    a, b := 5, 3
+    fmt.Println("Sum:", a+b)
+    fmt.Println("Difference:", a-b)
+    fmt.Println("Product:", a*b)
+    fmt.Println("Quotient:", a/b)
+    fmt.Println("Remainder:", a%b)
 
-   p:= 34
+    // Comparison operators
+    fmt.Println("Equal:", a == b)
+    fmt.Println("Not Equal:", a != b)
+    fmt.Println("Greater than:", a > b)
+    fmt.Println("Less than:", a < b)
+    fmt.Println("Greater or Equal:", a >= b)
+    fmt.Println("Less or Equal:", a <= b)
 
-   q:= 20
+    // Logical operators
+    p, q := true, false
+    fmt.Println("Logical AND:", p && q)
+    fmt.Println("Logical OR:", p || q)
+    fmt.Println("Logical NOT:", !p)
 
-   // & (bitwise AND)
+    // Bitwise operators
+    fmt.Println("Bitwise AND:", a&b)
+    fmt.Println("Bitwise OR:", a|b)
+    fmt.Println("Bitwise XOR:", a^b)
+    fmt.Println("Left Shift:", a<<1)
+    fmt.Println("Right Shift:", a>>1)
 
-   result1:= p & q
+    // Assignment operators
+    x := 10
+    x += 5
+    fmt.Println("Addition Assignment:", x)
+    x -= 3
+    fmt.Println("Subtraction Assignment:", x)
+    x *= 2
+    fmt.Println("Multiplication Assignment:", x)
+    x /= 4
+    fmt.Println("Division Assignment:", x)
+    x %= 3
+    fmt.Println("Modulus Assignment:", x)
 
-   fmt.Printf("Result of p & q = %d", result1)
-
-   // | (bitwise OR)
-
-   result2:= p | q
-
-   fmt.Printf("\nResult of p | q = %d", result2)
-
-   // ^ (bitwise XOR)
-
-   result3:= p ^ q
-
-   fmt.Printf("\nResult of p ^ q = %d", result3)
-
-   // << (left shift)
-
-   result4:= p << 1
-
-   fmt.Printf("\nResult of p << 1 = %d", result4)
-
-   // >> (right shift)
-
-   result5:= p >> 1
-
-   fmt.Printf("\nResult of p >> 1 = %d", result5)
-
-   // &^ (AND NOT)
- 
-   result6:= p &^ q
-
-   fmt.Printf("\nResult of p &^ q = %d", result6)
-
+    // Address-of and Dereference operators
+    y := 20
+    ptr := &y
+    fmt.Println("Address-of:", ptr)
+    fmt.Println("Dereference:", *ptr)
 }
-___________________________________________________________
-```
-```
-**Output:** 
-
-Result of p & q = 0
-Result of p | q = 54
-Result of p ^ q = 54
-Result of p << 1 = 68
-Result of p >> 1 = 17
-Result of p &^ q = 34
-
 ```
 
+In this example:
 
-#### Assignment Operators
-Assignment operators are used to assigning a value to a variable.
-
-- **“=”(Simple Assignment):** This is the simplest assignment operator. This operator is used to assign the value on the right to the variable on the left.
-- **“+=”(Add Assignment):** This operator is a combination of ‘+’ and ‘=’ operators. This operator first adds the current value of the variable on left to the value on the right and then assigns the result to the variable on the left.
-- **“-=”(Subtract Assignment):** This operator is a combination of ‘-‘ and ‘=’ operators. This operator first subtracts the current value of the variable on left from the value on the right and then assigns the result to the variable on the left.
-- **“ * = ”(Multiply Assignment):** This operator is a combination of ‘*’ and ‘=’ operators. This operator first multiplies the current value of the variable on left to the value on the right and then assigns the result to the variable on the left.
-- **“ /= ”(Division Assignment):** This operator is a combination of ‘/’ and ‘=’ operators. This operator first divides the current value of the variable on left by the value on the right and then assigns the result to the variable on the left.
-- **“%=”(Modulus Assignment):** This operator is a combination of ‘%’ and ‘=’ operators. This operator first modulo the current value of the variable on left by the value on the right and then assigns the result to the variable on the left.
-- **“&=”(Bitwise AND Assignment):** This operator is a combination of ‘&’ and ‘=’ operators. This operator first “Bitwise AND” the current value of the variable on the left by the value on the right and then assigns the result to the variable on the left.
-- **“^=”(Bitwise Exclusive OR):** This operator is a combination of ‘^’ and ‘=’ operators. This operator first “Bitwise Exclusive OR” the current value of the variable on left by the value on the right and then assigns the result to the variable on the left.
-- **“|=”(Bitwise Inclusive OR):** This operator is a combination of ‘|’ and ‘=’ operators. This operator first “Bitwise Inclusive OR” the current value of the variable on left by the value on the right and then assigns the result to the variable on the left.
-- **“<<=”(Left shift AND assignment operator):** This operator is a combination of ‘<<’ and ‘=’ operators. This operator first “Left shift AND” the current value of the variable on left by the value on the right and then assigns the result to the variable on the left.
-- **“>>=”(Right shift AND assignment operator):** This operator is a combination of ‘>>’ and ‘=’ operators. This operator first “Right shift AND” the current value of the variable on left by the value on the right and then assigns the result to the variable on the left.
-
-#### Misc Operators
-- **& :** This operator returns the address of the variable.
-- ( * ): This operator provides pointer to a variable.
-- <- : **The name of this operator is receive. It is used to receive a value from the channel.
-```
-package main
-import "fmt"
-
-func main(){
-a := 4
-//using address of operator(&) and
-//pointer indirection(*) operator
-
-b:= &a
-fmt.Println(*b)
-*b = 7
-fmt.Println(a)
-}
-___________________________________________________________
-
-Output:
-
-4
-7
-```
+- We use different arithmetic, comparison, logical, bitwise, and assignment operators.
+    
+- We demonstrate the use of address-of (`&`) and dereference (`*`) operators with pointers.
 
 NEXT -> [[(6) Control statements in Go]]

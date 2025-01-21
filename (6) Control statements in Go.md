@@ -264,4 +264,4 @@ func main() {
 }
 ```
 
-NEXT -> [[(7) Struct in Go]]
+NEXT -> [[(7) Struct and pointers in Go]]

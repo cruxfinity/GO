@@ -126,3 +126,75 @@ ___
 2. ==Boilerplate code==: When defining large structures with many fields, it can be time-consuming to write out all of the field names and types.
 
 3. ==Immutability==: Go structures are mutable by default, which can make it more difficult to enforce immutability in your code.
+___
+
+# Pointers
+In Go, pointers are variables that store the memory address of another variable. They are useful for referencing and manipulating data indirectly. Let's go over the basics of pointers in Go with an example:
+
+1. **Declaring a Pointer:** You can declare a pointer using the `*` operator.
+    
+    
+    
+    ```
+    var ptr *int // Declares a pointer to an integer
+    ```
+    
+2. **Getting the Address of a Variable:** You can get the address of a variable using the `&` operator.
+    
+    
+    
+    ```
+    var num int = 42
+    var ptr = &num // ptr now holds the address of num
+    ```
+    
+3. **Dereferencing a Pointer:** You can access the value stored at the address a pointer is pointing to using the `*` operator.
+    
+    
+    
+    ```
+    var value = *ptr // value is now 42, the value of num
+    ```
+    
+
+Here is a complete example:
+
+
+
+```
+package main
+
+import "fmt"
+
+func main() {
+    // Declare an integer variable
+    var num int = 42
+
+    // Declare a pointer and assign the address of num to it
+    var ptr *int = &num
+
+    // Print the value of num using the pointer
+    fmt.Println("Value of num:", *ptr)
+
+    // Modify the value of num using the pointer
+    *ptr = 100
+
+    // Print the modified value of num
+    fmt.Println("Modified value of num:", num)
+}
+```
+
+In this example:
+
+- We declare an integer variable `num` and assign it the value `42`.
+    
+- We declare a pointer `ptr` and assign it the address of `num`.
+    
+- We use the pointer to print the value of `num`.
+    
+- We modify the value of `num` using the pointer and print the modified value.
+    
+
+Pointers in Go are a powerful feature that allows you to work with memory addresses and manipulate data indirectly. They are especially useful when working with large data structures or when you need to modify a value within a function.
+
+NEXT -> [[(8) Functions and methods in Go]]
